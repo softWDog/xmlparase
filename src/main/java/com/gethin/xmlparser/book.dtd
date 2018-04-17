@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--bookstore元素，包括多个book子元素 -->
+<!ELEMENT bookstore (book)*>
+<!--book元素，包括name,author,year,price子元素-->
+<!ELEMENT book (name,author,year,price)>
+<!--book元素，有一个属性名为id的属性，这个属性是必须的 -->
+<!ATTLIST book id ID #REQUIRED>
+<!--name元素，元素只包括文本 -->
+<!ELEMENT name (#PCDATA)>
+<!--author元素，元素只包括文本 -->
+<!ELEMENT author (#PCDATA)>
+<!--author元素，元素只包括文本 -->
+<!ELEMENT year (#PCDATA)>
+<!--price元素，元素只包括文本 -->
+<!ELEMENT price (#PCDATA)>
+
+
